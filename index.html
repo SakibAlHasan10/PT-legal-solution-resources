@@ -13,6 +13,9 @@
         tailwind.config = {
             theme: {
                 extend: {
+                    backgroundImage: {
+                        "bg-img": 'url("./images/banner.png")',
+                    },
                     colors: {
                         clifford: '#da373d',
                         "bg-color": '#B68C5A',
@@ -25,10 +28,10 @@
 
 <body>
     <!-- header section -->
-    <header class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-8 my-6">
+    <header class="max-w-screen-xl mx-auto px-2 md:px-16 lg:px-24 ">
         <!-- navbar section -->
         <nav>
-            <div class="navbar bg-base-100">
+            <div class="navbar px-0 bg-base-100">
                 <div class="navbar-start">
                     <div class="dropdown">
                         <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -123,8 +126,61 @@
                 </div>
             </div>
         </nav>
+        <!-- banner section -->
+        <section>
+            <div class="hero h-[550px]  bg-bg-img bg-cover bg-no-repeat bg-center ">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-center text-neutral-content">
+                    <div class="">
+                        <h1 class="mb-5 text-7xl font-extrabold text-white">We Provide Effective <br>
+                            Legal Solutions</h1>
+                        <p class="mb-5 text-[#E7E7E7]">There are many variations of passages of Lorem Ipsum available,
+                            but the majority <br>
+                            have suffered alteration in some form, by injected humour.</p>
+                        <div>
+                            <input class="md:w-[450px] w-[200px] h-12 rounded-lg px-5" type="search"
+                                placeholder="Search your services">
+                            <button class="btn bg-bg-color ml-4 text-white border-none right-0">Search</button>
+                        </div>
 
+                    </div>
+                </div>
+            </div>
+        </section>
     </header>
+    <!-- main section -->
+    <main class="max-w-screen-xl mx-auto px-2 md:px-16 lg:px-24 ">
+        <!-- The Legal Practice Area -->
+        <section>
+            <div>
+                <h2>
+                    The Legal Practice Area
+                </h2>
+                <p>
+                    There are many variations of passages of Lorem Ipsum available, but the majority have
+                    suffered alteration in some form, by injected humour.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                    <div class="card w-96 bg-base-100 shadow-xl">
+                        <figure class="px-10 pt-10">
+                          <img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <h2 class="card-title">Shoes!</h2>
+                          <p>If a dog chews shoes whose shoes does he choose?</p>
+                          <div class="card-actions">
+                            <button class="btn btn-primary">Buy Now</button>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
 
 </body>
 
