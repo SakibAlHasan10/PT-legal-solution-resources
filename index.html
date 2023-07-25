@@ -41,7 +41,7 @@
     </style>
 </head>
 
-<body class="text-font">
+<body class="text-font ">
     <!-- header section -->
     <header class="max-w-screen-xl mx-auto px-2 md:px-16 lg:px-24 ">
         <!-- navbar section -->
@@ -558,7 +558,7 @@
     </main>
     <!-- footer section -->
     <footer class=" justify-between  p-10 bg-[#111] text-[#CFCFCF] text-base-content">
-        <div class="footer max-w-screen-xl mx-auto px-2 md:px-16 lg:px-24">
+        <div class="footer max-w-screen-xl mx-auto px-2 lg:px-24">
             <div>
                 <img src="./images/logo.png" alt="">
                 <p class="text-base font-normal w-60 mt-6">
@@ -589,12 +589,15 @@
             <div>
                 <span class="text-2xl font-extrabold text-white">Subscribe</span>
 
-                <div class="form-control w-80 text-white">
+                <div class="form-control md:w-44 lg:w-80 text-white">
                     <p class="mb-5">Subscribe for our latest & <br> Articles. We Won’t Give You <br>Spam Mails</p>
                     <div class="relative">
-                        <input type="email" placeholder="Email Address" class="input input-bordered w-full pr-16" />
-                        <button class="btn bg-[#B68C5A] absolute top-0 right-0 rounded-l-none"><i
-                                class="fa-regular text-white p-3 text-base fa-paper-plane"></i></button>
+                        <input type="email" placeholder="Email Address"
+                            class=" lg:max-w-2xl md:w-40 lg:w-80   input input-bordered pr-16" />
+                        <button class="btn bg-[#B68C5A] absolute  top-0 right-0  rounded-l-none">
+                            <i class="fa-regular text-white p-3 text-base fa-paper-plane">
+                            </i>
+                        </button>
                     </div>
                 </div>
             </div>
